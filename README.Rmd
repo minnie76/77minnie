@@ -35,7 +35,6 @@ devtools::install_github("minnie76/77minnie")
 This is a basic example which shows you how to solve a common problem:
 
 ```{r example}
-install.packages("bis620.2022")
 library(bis620.2022)
 ## basic example code
 ```
