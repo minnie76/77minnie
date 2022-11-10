@@ -9,6 +9,5 @@
 library(testthat)
 library(vdiffr)
 library(bis620.2022)
-setwd("~/Desktop/2022-11-08")
 
 test_check("bis620.2022")
