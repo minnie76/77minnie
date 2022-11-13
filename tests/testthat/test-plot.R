@@ -23,3 +23,30 @@ test_that(
     vdiffr::expect_doppelganger("first-100-samples", p)
   }
 )
+
+test_that(
+  "The spectral_signature() errors when no X,Y,Z column.",
+  {
+    data(iris)
+    expect_error(spectral_signature(iris))
+  }
+)
+
+test_that(
+  "The accel_plot of spectral_signature returns a ggplot object.",
+  {
+    data(ukb_accel)
+    p=spectral_signature(ukb_accel,take_log = FALSE)[1:100,]|>accel_plot()
+    expect_true(inherits(p, "gg"))
+  }
+)
+
+
+test_that(
+  "The accel_plot of spectral_signature returns a ggplot object.",
+  {
+    data(ukb_accel)
+    p=spectral_signature(ukb_accel,take_log = TRUE)[1:100,]|>accel_plot()
+    expect_true(inherits(p, "gg"))
+  }
+)
