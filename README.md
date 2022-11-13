@@ -6,8 +6,11 @@
 <!-- badges: start -->
 
 [![R-CMD-check](https://github.com/minnie76/77minnie/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/minnie76/77minnie/actions/workflows/R-CMD-check.yaml)
-[![test-coverage](https://github.com/minnie76/bis620.2022/actions/workflows/test-coverage.yaml/badge.svg)](https://github.com/minnie76/bis620.2022/actions/workflows/test-coverage.yaml/badge.svg)
-[![lint](https://github.com/minnie76/bis620.2022/actions/workflows/lint.yaml/badge.svg)](https://github.com/minnie76/bis620.2022/actions/workflows/lint.yaml/badge.svg)
+[![test-coverage](https://github.com/minnie76/77minnie/actions/workflows/test-coverage.yaml/badge.svg)](https://github.com/minnie76/77minnie/actions/workflows/test-coverage.yaml)
+[![lint](https://github.com/minnie76/77minnie/actions/workflows/lint.yaml/badge.svg)](https://github.com/minnie76/77minnie/actions/workflows/lint.yaml)
+[![Build
+Status](https://app.travis-ci.com/minnie76/bis620.2022.svg?branch=main)](https://app.travis-ci.com/minnie76/bis620.2022)
+[![codecov](https://codecov.io/gh/minnie76/bis620.2022/branch/main/graph/badge.svg?token=8ZWG4TYCHL)](https://codecov.io/gh/minnie76/bis620.2022)
 <!-- badges: end -->
 
 The goal of bis620.2022 is to …
