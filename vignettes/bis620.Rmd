@@ -42,15 +42,13 @@ library(ggplot2)
 library(tidyr)
 
 setwd("~/Desktop")
-folfox_path = file.path("620","AllProvidedFiles_309", "PDS_DSA_20050203")
-#setwd("C:/魏珈/Yale/22fall/BIS 620/course_files_export/2022-09-01")
-#folfox_path = file.path("PDS_DSA_20050203")
-ff_files = dir(folfox_path)
-ff_names = gsub("_pds2019.sas7bdat", "", ff_files)
+folfox_path <- file.path("620", "AllProvidedFiles_309", "PDS_DSA_20050203")
+ff_files <- dir(folfox_path)
+ff_names <- gsub("_pds2019.sas7bdat", "", ff_files)
 
-dl = map(file.path(folfox_path, ff_files), ~ read_sas(.x))
+dl <- map(file.path(folfox_path, ff_files), ~ read_sas(.x))
 
-names(dl) = ff_names
+names(dl) <- ff_names
 ```
 
 Then we take the columns of `SUBJID`, `ATRT`, `PRSURG`, `DTHDY`, `DTH`, `LIVERMET`, `AGE`, `SEX`, `B_WEIGHT`, `B_HEIGHT`, `RACE`, `DIAGTYPE` in the `adsl` table of the original "PDS_DSA_20050203" dataset as our new dataframe for further analysis.
